@@ -1,0 +1,43 @@
+HashSet<Character> m=new HashSet<Character>();
+m.add('s');
+m.add('d');
+m.add('c');
+m.add('a');
+System.out.println(m);
+m.remove(122);
+m.remove("asdfsd");
+
+Iterator d=m.iterator();
+while(d.hasNext())
+{
+  System.out.println(d.next());
+}
+
+Output:
+[a, s, c, d]
+a
+s
+c
+d
+
+LinkedHashSet<Character> m2=new LinkedHashSet<Character>();
+m2.add('s');
+m2.add('d');
+m2.add('c');
+m2.add('a');
+System.out.println(m2);
+m2.remove(122);
+m2.remove("asdfsd");
+
+Iterator d3=m2.iterator();
+while(d3.hasNext())
+{
+  System.out.println(d3.next());
+}
+
+Output:
+[s, d, c, a]
+s
+d
+c
+a
